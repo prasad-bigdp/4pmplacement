@@ -1,0 +1,12 @@
+JS
+=====
+  functions
+  ==========
+  1. WAF which accepts 2 parameters(length and breath) and print the area of rectangle
+  2. WAF which accepts side of a square and return its area.
+  3. WAF  which accepts a strings and print number of characters  except spaces
+  eg: Input:"Js is easy" output: 8
+
+  4. WAF  which accepts three parameters and return its largest value
+  5. WAF which accepts two parmeters(both are strings) and return the string with more number of non repeated characters
+    eg:  //Input: "PRASAD" ,"JOHNA"

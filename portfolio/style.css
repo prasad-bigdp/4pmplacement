@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+}
+header{
+    background-color: green;
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo>p
+{
+    font-size: 48px;
+    color: white;
+}
+.logo>p>span{
+    color: blue;
+}
+.menu{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+.menu>li>a{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}
+.menu>li>a:hover{
+    color: blue;
+}
+
+
+
+
+
+
+/* banner css starts here */
+    #banner{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #banner>img{
+        height: 30%;
+        border-radius: 50%;
+        box-shadow: 3px 5px 30px blue;
+    }
+    #banner>h2{
+        font-size: 64px;
+    }
+    #banner h3{
+        font-size: 18px;
+    }
+    .buttons{
+        display: flex;
+        gap:20px;
+    }
+    button{
+        padding: 10px 20px;
+        border-radius: 20px 0px 20px 0px;
+        font-size: 24px;
+        background-color: white;
+    }
+    button>a{
+        text-decoration: none;
+    }
+   .firstBtn{
+    background-color: black;
+   }
+   .firstBtn>a{
+    color: white;
+   }
+   .secondBtn{
+    background: transparent;
+    border: none;
+   }
+   .secondBtn>a{
+    text-decoration: 3px solid blue underline;
+   }
+
+/* banner css ends here */
+/* about css starts here */
+  .title{
+    text-align: center;
+    margin: 50px 0px;
+  }
+  
+   #about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+   }
+   .education {
+     display: flex;
+     flex-direction: column;
+     gap: 20px;
+     width: 40%;
+   }
+   .degree{
+    padding: 30px;
+    box-shadow: 2px 3px 15px green;
+    width: 100%;
+    border-radius: 20px;
+   }
+   .skills{
+    display: flex;
+    gap: 20px;
+   }
+   .skills>i{
+    font-size: 48px;
+   }
+   .skills>i:hover{
+     transform: scale(1.2);
+     color: green;
+   }
+
+/* about css ends here */
+/* projects css starts here */
+  #projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 1280px;
+    margin: auto;
+    gap: 20px;
+  }
+  .project{
+     padding: 20px;
+     display: flex;
+     flex-direction: column; box-shadow: 2px 3px gray;border-radius: 20px;
+     gap: 20px;
+  }
+  .project>img{
+    height: 100%;width: 100%;object-fit: contain;
+  }
+  .project:hover{
+    transform: scale(1.05);box-shadow: 2px 3px 15px green;
+  }
+/* projects css ends here */
+
+/* contact css starts here */
+   #contact{
+    margin: 100px auto;
+    max-width: 1280px;
+    box-shadow: 2px 3px 10px green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    padding: 50px 0px;
+    border-radius: 20px;
+    gap: 10px;
+   }
+   .socialMedia>a{
+    color: black;
+    text-decoration: none;
+    font-size: 24px;
+   }
+   .socialMedia>a:hover{
+    color: green;
+   }
+   footer{
+    padding: 20px 0px;
+    text-align: center;
+    background-color: green;
+    color: white;
+    font-size: 24px;
+   }
+/* contact css ends here */
+
+.floating-watsapp img{
+  height: 100px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px){
+    header{
+        flex-direction: column;
+    }
+    section{
+        margin: 10px 20px;
+    }
+    #banner>h2{
+        font-size: 48px;
+    }
+    .education{
+        width: 80%;
+    }
+    #about{
+        flex-direction: column;
+    }
+    #projects{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+   
+}
+
+

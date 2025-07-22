@@ -1,0 +1,89 @@
+Arrays : In Javascript, Array is a collection of element. There is no restriction on similar data items or fixed length of array.
+Each and Every element of array is  refered with index value. The Index values starts with zero.
+Arrays are mutable and they compare based on reference instead of values.
+   let arr = [10,20], arr1=[10,20];
+   console.log(arr==arr1) //false
+   console.log(arr[0]) //10;
+
+To get Total elements in an array , we can use 'length' attribute
+   console.log(arr.length) //2
+
+we can even assign value to any indexes
+  arr[25] = "raj";
+  console.log(arr.length)//26
+
+The value of any uninitialized value in an array is 'undefined'
+
+Array Methods:  JS provides lot of default methods  such as
+
+i. Push(values) : it is used to insert values at the end of the array
+   arrayname.push(value1,value2.....)
+
+ii. pop() : it is used to remove last value of the array
+   arrayname.pop()
+
+iii. unshift(values): it is used to insert values at the starting of the array
+  arrayname.unshift(value1,value2.....)
+
+iv. shift() : it is used to remove the starting value of the array
+    arrayname.shift()
+
+v. splice(starting index, deleteCount, inserting values) : it is used to delete specific count of consecutive elements or add any values at starting index
+    arrayname.splice(starting index, deleteCount, inserting values)
+
+vi. reverse() : it is used to reverse the given array
+   arrayname.reverse();
+
+vii. join(delimiter): it works opposite to split . it joins the individual array elements using delimiter
+    arrayname.join(delimiter)
+
+viii. includes(search element): it returns true or false based on whether element exists in array or not
+    
+ix. forEach () : it is used to apply or execute a function to each and every element of the array. it accepts a callback function and passes each time array element and index to that function. it cannot return the value(it returns undefined)
+       arrayname.forEach(function(element,index){
+        // logic
+       })
+
+x. map(): it is used to apply or execute a function to each and every element of the array but it also returns values for each and every element of the array.it accepts a callback function and passes each time array element and index to that function
+        arrayname.map(function(element,index){
+        // logic
+       })   
+
+xi. filter(): it is used to apply or execute a function to each and every element of the array and returns only elements which satisfies the given condition.it accepts a callback function and passes each time array element and index to that function
+       arrayname.filter(function(element,index){
+        // logic
+       })  
+
+xii. some / every : it is true when atleast some of the elements satisfies return condition and every will be tru only if every element satisfies given condition
+      arrayname.some(function(element,index){
+        // logic
+       })
+
+xiii. sort : it is used to sort the array alphabetically. we can even pass compare function, if that function returns +ve, it will swap the elements and the process continues to all elements
+
+     arrayname.sort()
+     arrayname.sort(function(a,b){
+    returns a-b;
+       })
+
+
+Objects: objects are used to store data in key value pairs. it contains properties and methods
+   let obj ={
+      name:"prasad",
+      age:86,
+      run: function(){
+         console.log("running")
+      }
+   }
+  
+  objects are dynamic in Javascript, so we can add any value . If we access any value which is not available in object, it will be 'undefined'
+
+    'this' keyword refers to current calling object
+
+   seal and Freeze:
+    Seal: it is used to seal the object. new values cannot be added but existing values can be modified
+       Object.seal(objectname)
+   
+    Freeze : it is used to Freeze the object . new values cannot be added and existing values also cannot be modified
+
+

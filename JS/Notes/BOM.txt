@@ -1,0 +1,12 @@
+Browser Object Model: The whole Browser is controlled by an object called 'window'
+Browsers can perform multiple tasks such as storage, media recording, copy paste, history etc..
+Browser can store 4 ways
+   i.cache Storage : cache is a temporary storage that is used to avoid unnecessary server requests.it increases performance by decreasing loading time
+   ii.cookies : cookies are used to understand users behaviour on a website and temporary files like sessions,ids etc.., browsers provides default cookies for website consents.
+
+   iii. LocalStorage: we can store any string in browser using LocalStorage. it is a permanenent storage which will be kept even after browser window is closed
+   localStorage.setItem("username","john")
+   localStorage.removeItem("username")
+   localStorage.clear();
+
+   iv. sessionStorage: it is exactly similar to localStorage but it will be deleted once browser is closed

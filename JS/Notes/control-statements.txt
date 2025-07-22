@@ -1,0 +1,45 @@
+control statements: control statements are used to control the flow based on decision. These are also called decision making statements. They checks a condition and changes the flow based on result
+  i. if
+  ii. switch
+
+i. if: if is used to check a condition to change the flow based on true/false
+  simple if:
+      if(condition){
+        //statements
+      }
+   if_else:
+      if(condition){
+        //statements
+      }
+      else
+      {
+        //statements
+      }
+
+   nested if:
+      if(condition){
+        if(condition){
+
+        }
+      }
+    if_else_if:
+      if(condition){
+        //statements
+      }
+      else if(condition2){
+
+      }.....
+      else{
+
+      }
+
+   ii. switch: switch is used to make code easier when multiple options or cases need to be checked
+   switch(value){
+    case value1: statements;break;
+    case value2: statements;break;
+    case value3: statements;break;
+    default : statements;
+   }
+
+
+

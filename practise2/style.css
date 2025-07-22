@@ -1,0 +1,26 @@
+.box{
+    height: 20vh;
+    width: 50vw;
+    background-color: red;
+    margin: 2px;
+    font-size: 12px;
+}
+.chotaBox{
+    height: 3em; /*72*/
+    width: 5em; /*120*/
+    background-color: green;
+}
+/* .box2{
+    position: relative;
+    right: 0px;
+} */
+ .box2{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    border-radius: 50%;
+ } 
+ .box3{
+    position: sticky;
+    top: 0;
+ }

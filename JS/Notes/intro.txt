@@ -1,0 +1,60 @@
+Javascript: Javascript is used for functionality or behaviour of web pages.Javascript is a versatile, dynamic programming languages which can build client and server applications.
+  Every Browser will have engine to run JS called JS engine. For Google chrome, it is v8
+  In 1995, Breden Eich, employee of Netscape developed Javascript in 10 days. Initially it is named as Mocha , then Livescript . To gain popularity from java, name is changed as "Javascript". 
+  JS is synchronous and Single Threaded scripting Language. It is Case Sensitive.
+ Initally , It was made to add interactivity to static web sites(HTML,CSS) but later it became Advanced by using XML,AJAX etc..,
+
+   How to include JS into HTML?
+We can JS into HTML using two ways
+    i. internal Javascript : we can include JS using 'script' tag as a element
+         <script>
+            console.log("hello world");
+         </script>
+    ii. External Javascript : we can include external .js file using script with 'src' attribute
+      <script src="./filename.js"></script>
+
+    Browsers Provide a set of developer Tools built directly into web browser. it allows us to develop, debug, diagnose the pitfalls of web pages.
+     Main Tools are: 
+         Elements -- contains HTML with CSS
+         console -- used to Run JS commands, log messages, debug messages
+         network -- contains network activity such as API
+         sources -- contains complete source files
+         memory -- contains memory details like allowcation, heap etc..,
+         application -- contains storages such as local storage, cookies, cache etc..,
+         performance -- contains analytics of website performance
+         lighthouse -- contains details report of web page analytics
+
+  How to comment code in JS?
+      we can comment code in JS in two ways
+        i. single line : comment followed by double slash(//) and it comments only one line
+        ii. multi line comment : comment followed by /* and ends with */
+
+   Variables:
+          variables or Identifiers are used to store a changable value.it follows basic rule of nomenclature
+         we can declare variables using var, let, const. Initially only 'var' used to be there but in 2015, ES6 introduces let and const
+    Difference between var, let and const
+
+                     var                                                             let                                      const
+
+       Redeclare is possible                            Redeclare is not possible              Redeclare is not possible
+       Reassign is possible                              Reassign is Possible                    Reassign is not possible
+       can be used before initialization          cannot be used before                   cannot be used before
+                                                                    initialization                                  initalization
+      Function Scoped                                   Block Scoped                                 Block Scoped
+
+
+
+
+
+ 
+
+
+
+
+  
+
+
+
+
+
+

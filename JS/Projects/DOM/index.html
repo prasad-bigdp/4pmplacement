@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            transition: all 2s ease;
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #0f0f0f;
+        }
+        h1{
+            font-size: 72px;
+            color: green;
+        }
+        .buttons{
+            display: flex;
+            gap: 10px;
+        }
+        button{
+            background-color: white;
+            padding: 10px 20px;
+            font-size: 24px;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="images">
+        <img src="" alt="" id="img" height="200">
+    </div>
+    <button onclick="prev()">prev</button>
+    <button onclick="next()">next</button>
+    <h1 id="name">PRASAD</h1>
+   <div class="buttons">
+    <button onclick="disappear()">Disappear</button>
+    <button onclick="appear()">Appear</button>
+    <button onclick="change()">change</button>
+   </div>
+    <script src="./script.js"></script>
+</body>
+</html>

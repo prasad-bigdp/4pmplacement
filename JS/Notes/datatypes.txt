@@ -1,0 +1,100 @@
+Datatypes in JS:
+================
+    Javascript is a dynamically typed language.Here, Datatype is decided by the type of data the variable holds
+    To find the datatype of a variable, we can use 'typeof' operator.
+    Primarily datatypes are divided as two types. They are:
+i. Primitive Data types: Primitive Datatypes are used to store single values. Most widely used are:
+    a. number
+    b. string
+    c. boolean
+    d. undefined
+    e. null
+ii. Non Primitive Data Types : These Datatypes are used to store collection of values
+    a. functions
+    b. Arrays
+    c. objects
+
+Type coversion (or) Typecasting : Converting one datatype into another datatype is called typecasting. There are two ways of type casting
+  i. Implicit : JS can automatically convert one data type into another based on operations called Implicit Typecasting
+  ii. Explicit : Forced way of converting one datatype to another is called Explicit Typecasting
+console.log(5 + '4'); //'54'
+console.log(5 - '4');  //1
+console.log(5 + true); //6
+console.log('4' + true); //4true
+console.log(2 * '5'); //10
+console.log(2 * 'raj'); //NaN-- Not a Number
+
+i. number:  Any numerical value is considered as number. numbers in javascript have some default methods such as 
+   toFixed(n)  -- returns roundfigure upto n decimal digits
+   toPrecision(n) -- returns roundfigure upto n total digits
+   toString(n) -- returns n base number as a string
+
+   we can use Math Methods for numbers
+   i. Math.sqrt(n) -- returns square root of n
+   ii. Math.cbrt(n) -- returns cube root of n
+   iii. Math.abs(n) -- returns always positive n
+   iv. Math.max(a,b,c,...) -- returns maximum value between given values
+   v. Math.min(a,b,c,...) -- returns minimum value between given values
+   vi. Math.ceil(n) -- returns nearest larger integer
+   vii. Math.floor(n) -- returns nearest smaller integer
+   viii. Math.round(n) -- returns nearest integer
+   ix. Math.random() -- retruns random value between 0 and 1
+   x. Math.pow(a,b) -- returns a power b.
+
+ii. strings:  strings are used to represent a collection of characters. it contains mixture of alphabets, symbols and digits. IN JS, strings can denoted as 
+    i. single or double quotes
+    ii. backticks.
+i. single or double quotes: There is no difference between single or double quotes in JS. we might use interchangely but is started with single quote should end with single quote
+ii. backticks : Representing a string with backticks allows the string to contain dynamic value. This representation of string is called Template Literal
+Here Dynamic values are between ${}
+let name = "prasad", a1 = 10, b1 = 20;
+console.log(`The name is ${name}`);
+console.log(`The sum of ${a1} and ${b1} is ${a1 + b1}`)
+
+strings have default functions such as 
+i. length  -- returns total number of characters in string including spaces
+ii. toUpperCase() -- returns uppercase of given string 
+iii. toLowerCase() -- returns lowercase of given string
+iv. indexOf() -- returns index of first occurence of given character
+v. lastIndexOf() -- returns last Inde of occurence of given character
+vi. chatAt() -- returns character at specific index
+vii. startsWith() -- checks whether given string starting with input or Not
+viii. endssWith() -- checks whether given string ends with input or Not
+ix. replace(a,b) -- replaces the first occurence of a with b
+x. replaceAll(a,b) -- replace all occurences of a with b
+xi. slice(start,end) -- returns sub string with start index and upto end index
+xii. split() -- returns an array of strings after cutting original string based on delimiter
+xiii. trim() -- removes space at starting and ending of string
+xiv. concat()  -- used to add multiple strings
+
+
+3. boolean: boolean is used to store true or false. true can be converted as 1, false can be 0
+
+4. undefined : undefined is the accidental absense of value. A variable becomes undefined when it is declared but not initialised or the value might be expected in future
+   let a;
+   consoel.log(a); //undefined
+   console.log(b) //error : b is not defined
+
+5. null : null is the intentional absense of value. A variable becomes null  when variable needs to have no value. 
+    let a = null;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

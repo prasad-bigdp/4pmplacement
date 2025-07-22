@@ -1,0 +1,35 @@
+Events: Events are users actions. Events can be captured by Event handlers or Event Listners. These events triggers a function for a particular task.
+
+Event handlers: Event handlers are defined in HTML as element's properties. They have prefix 'on' and triggers the function when event happens
+   <button onclick="fun()">click me</button>
+
+EventListeners: EventListeners are defined in JS and added to elements using addEventListener and remove using removeEventListener
+     element.addEventListener('click',function(){
+        //body
+     })
+
+There are multiple events which are divided into parts like 
+   i. mouse Events
+   ii. keyboard events
+   iii. form events
+   iv. window events
+
+i. mouse Events : These events are actions done by user using mouse
+eg: click, dblclick,mouseover,mouseout,mouseup,mousedown etc..,
+
+ii. keyboard events : These events are actions done by user using keyboard
+eg: keyup,keydown
+
+iii. form events : These events are actions done by user in inputs or form related elements
+
+eg: input,change,select,submit,reset
+
+iv. Window events : These events are actions perfomed by user generally in browser like opening a web page, closing a web page, scrolling the page
+
+
+Task1: copy of doyouwannagooutwithme and make it creative
+  eg:https://yashwelcome.netlify.app/
+
+Task2: make a div move left and right based on keys "G" and "H"
+
+Task3: Take an input and the moment you enter data in input box, below it should display, no of vowels, consonants, spaces in it . maximum limit is 140 characters

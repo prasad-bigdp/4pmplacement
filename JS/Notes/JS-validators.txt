@@ -1,0 +1,28 @@
+JS Validators : 
+HTML Provides basic validation to input elements such as required, disabled, readonly, min,max,minlength,maxlength and pattern
+JS also provides validations using conditional statements and regular expressions
+Regular Expressions: Regular Expressions are used to match a pattern in given string
+It uses  different symbols for validations
+[]   --- represents GROUP
+{a,b}  --- represents range like length from a to b
+{a}   --- fixed number of characters 'a'
+{a,}   -- atleast 'a' number of characters
++      -- atleast one occurence
+*      -- atleast zero occurence
+?      -- either zero or one occurence of GROUP
+.      -- it is wilicard character , it can become any character
+
+Groups : 
+[A-Z]    -- uppercase alphabets
+[aeiou]  -- any one vowel
+[A-Za-z]  -- any alphabet
+[0-9]    -- any numerical value
+\w       -- words
+\d       -- digits
+\s       -- space
+
+Mostly regular expressions starts with ^ and ends with $
+/^[A-Za-z0-9]{3,}$/    
+
+
+

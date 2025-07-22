@@ -1,0 +1,104 @@
+Functions: JS follows function/modular oriented programming. A large piece of code is divided into smaller parts to make code more easy for debugging and reusability is called a function
+
+function function_name(parameters)
+{
+    //function body
+}
+
+function_name(arguments)
+
+// function with parameters
+function sum (a, b)
+{
+    console.log(a + b);
+}
+sum(4, "2");
+
+// default parameters
+function sum2(a, b=2) {
+	console.log(a + b)
+}
+sum2(3);
+
+Functions can also return values in javascript using "return" keyword. These values are return to the function call
+
+function areaSquare(a) {
+    return a * a;
+}
+res = areaSquare(10);
+console.log(res)
+
+In javascript, function is treated as a variable. we can print functions  . we can even write functions as function expression
+// function expression
+const area2 = function(a)
+{
+       return a*a
+}
+res = area2(10)
+console.log(res)
+// arrow function
+const area3 =  (a)=>  a * a
+res = area3(10)
+console.log(res)
+
+function Expressions are nothing but assigning a variable to anonymous function(nameless function). We can even write function expression as arrow functions where no need of return keyword or braces if one statement only is present in body
+
+
+// convert the following function into function expression and arrow functions
+
+function isEligible(age){
+     if(age>=18)
+       console.log("eligible to vote")
+     else
+       console.log("not eligible to vote")
+}
+isEligible(25);
+
+
+
+In Javascript, functions are treated as variables. , so we can even pass one function as a parameter to another function.
+ The function that is passed as parameter to another function is called callback function. The function that receives another function as parameter is called Higher order function
+
+function read ()
+{
+    console.log("i'm reading")
+}
+function write() {
+	console.log("i'm writing")
+}
+function display (a, b)
+{
+    a();
+}
+display(read,write)
+
+
+closures : Javascript allows inner functions to remember outer function values even after outer function execution ended. This is called closures
+function outer ()
+{
+    let i = 0;
+    function inner ()
+    {
+        i++;
+        console.log(i)
+    }  
+    return inner;
+}
+res = outer();
+console.log(res); //inner fun
+res()
+res()
+res()
+
+
+
+
+
+
+
+
+
+
+
+
+

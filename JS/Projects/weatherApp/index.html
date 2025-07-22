@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        #modal{
+            display: none;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 10px 20px gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="modal">
+        Hi PRASAD
+    </div>
+    <button onclick="openBox()">click me</button>
+    <div>
+        <input type="text" placeholder="Enter City Name" id="inp">
+        <button id="btn">Get Weather</button>
+    </div>
+    <div id="main"></div>
+    <script src="./script.js"></script>
+</body>
+</html>

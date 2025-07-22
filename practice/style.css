@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+.card{ */
+    /* height: 100px;
+    width: 100px; */
+    /* width: max-content;
+    height: max-content; */
+    /* border: 2px solid red;
+    border-radius: 30px 0px 30px 0px ;
+    padding: 25px;
+    box-sizing: border-box;
+    margin: 20px ; */
+/*}*/
+
+/* .card{
+   
+    font-size: 84px;
+    color: transparent;
+     /* background-image: linear-gradient(to right,red,green,blue,yellow,violet); */
+    /* background-image: url('https://m.media-amazon.com/images/I/71LHQ1o-3HL._AC_UF894,1000_QL80_.jpg');
+     background-position: center;
+     background-clip: text; 
+   /* background: radial-gradient(black,white,black,white,black,white,black,white);
+} */
+
+/*} */
+a:link{
+    color: blue;
+    text-decoration: none;
+}
+a:active{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+@font-face {
+    font-family: PrasadHorror;
+    src: url('./Horror\ Area.ttf');
+}
+input{
+    accent-color: red;
+    clip-path: circle();
+}
+ul{
+  list-style: none;
+}
+li{
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: prasadHorror;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    height: 50vh;
+    width: 50vw;
+    border: 2px solid red;
+    box-shadow: 5px 10px 50px red;
+}
+.card>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+

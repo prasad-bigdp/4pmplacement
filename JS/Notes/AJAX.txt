@@ -1,0 +1,74 @@
+AJAX (Asynchronous Javascript) : Javascript is basically synchronous but there is a way in web developement to create dynamic interactive web pages called Asynchronous Javascript. It allows us to create communication between client and server.
+Advantages: 
+    i. Load specific content without loading whole page
+    ii. send data to server and receive data from server
+    iii. mention delay,times using timers
+
+Timers : 
+   Browser provides default timer methods such as setTimeout, setInterval, clearTimeout,clearInterval etc..,
+ i. setTimeout(callback, time in milliseconds):
+     it helps to execute the callback function after specific time
+setTimeout(function ()
+ {
+  console.log("Hi")
+ }, 5000)
+ it print Hi in console after 5 seconds
+
+ ii. setInterval(callback,time in milliseconds):
+     it helps to execute the callback for every interval of time
+setInterval(function ()
+ {
+  console.log("Hi")
+ }, 5000)
+ it prints Hi for every 5 seconds
+
+
+ API (Application Programming Interface):
+     API works like a bridge between client and server. using API's, we can send the data from client and receive data from server.
+     There are different types of API's
+     i. SOAP API's :They use XML to define the format of messages
+     ii. REST API's :They use HTTP methods such as GET,POST,PUT,DELETE to interact with resources. They send or receive data as JSON-format (Javascript object Notation)
+     iii. GRAPHQL API's:They use Query Language to interact with only specific data
+
+     How to use API's?
+       We can send API Requests using multiple Ways
+    i. XmlHttpRequests : it is old and default browser method to send API Requests
+    ii. fetch : it is the modern Promise based default browser method used for HTTP Requests
+    iii. Axios : it is the 3rd party library which is used for HTTP Requests
+
+
+How to handle Asynchronous Functions in Javascript?
+Asynchronous function is a function that takes time(will not execute immediately).
+In olden times, we used callback functions to handle Asynchronous function but it creates an unfriendly code "callback hell" or "pyramid of Doom"
+
+To solve this callback hell, we use Promises . A Promises is an object that describe future possible of an Asynchronous function. Promises will have three states "pending", "fulfilled", "Rejected".Default state is "pending"
+
+To handle Promises , we use "then" and "catch" blocks. if Promise is fulfilled , it will go to then, if Promise is Rejected , it will goto catch
+
+Every Asynchronous function will return Promises like fetch
+
+Promise
+   .then
+   .catch
+
+fetch(url,{})
+   .then((res)=>res.json())
+   .then((data)=>console.log(data))
+   .catch((err)=>console.log(err));
+
+Async Await: Async Await is a modern syntactical sugar to handle promises. Instead of using then and catch blocks, we use 'await' keyword and it should be used in 'async' functions only
+async function functionName(){
+    const res = await fetch(url,{})
+    const data = await res.json()
+}
+In case of Error handling we can use try..catch blocks
+
+
+
+
+
+
+
+
+
+

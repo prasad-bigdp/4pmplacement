@@ -1,0 +1,43 @@
+Document Object Model:
+    Document is an object that contains complete HTML,CSS elements in Tree structure. That tree is called DOM tree. Each element in this tree is called "node"
+    console.log(document)
+    Accessing HTML elements:
+    There are 5 ways to access an Element in HTML
+    i. getElementsByTagName('tagName'): it is used to access HTML elements using document object by tagname but it selects all elements of specific tag name  and returns an array
+    ii. getElementsByClassName('className'): it is used to select/access HTML elements using document object by class name but it selects all elements of specific class name and returns an array
+    iii.getElementById('idname'): it is used to select/access HTML element using document object by Id.
+    iv. querySelector('query'): it selects element based on css query but it selects only first element that accepts query
+    v. querySelectorAll('query'): it selects elements based on CSS query but it selects all elements that accepts query
+
+DOM Manipulation:  we can manipulate or change HTML elements and their styles using document object and following properties
+    i. textContent :  it is used to access/update content inside an element
+    ii. innerText : it is also used to access/update content inside an element but it also observes CSS. incase of visibility :none, it cannot access element
+    iii. innerHTML : it is used to access/update HTML code inside an element
+     iv. style : it is used to acess/update styles of an element
+     v. classList : it is used to add classname or remove class name or toggle classname of an element
+     vi. value : it is used to access/update value of input element
+
+
+Task1 : Take a colorful div at center of screen and two buttons
+one button will make the div disappear
+another button will make the div appear
+
+Task2 : take a div of certain height and width and take an array of colors
+on button click, it should select random color in array and apply it to div background
+
+task3 : take a div and an array of images links and two buttons prev, next.
+prev will display previous image in div
+next will display next image in div
+
+DOM creation : we can create an element using 
+   document.createElement('elementName');
+
+we can add created elements into HTML using append/appendChild. append is used for multiple elements and appendChild is used for single element.
+
+
+
+
+
+
+
+

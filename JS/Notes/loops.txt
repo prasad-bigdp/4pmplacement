@@ -1,0 +1,92 @@
+Loops: loops are used to repeat or iterate a certain block of statements. There are two kinds of loops such as
+   i. Entry control loops
+   ii. Exit control loops
+
+Entry Control Loops:  These loops checks the condition before executing the statements. block will be exected only if condition is true. After executing, again condition will be checked and repeat the process until condition is false
+   Eg: while, for
+
+Exit control loops: These loops checks the condition after the block is executed and if it is true , again execute the block, if it is false, it will end. Even though inital value not satisfy the condition, one time the block execute
+   Eg: do while
+
+while:  while is used as a entry control loop which contains initialization, condition and updation in three different lines
+  initialization;
+  while(condition){
+    statements;
+    updation;
+  }
+
+do while: do while is used as exit control loop which contains initialization,condition and updation in three different lines
+ initialization;
+ do{
+    statements;
+    updation;
+ }while(condition);
+
+for() : for is used as entry control loop which contains initialization, condition and updation in single line
+for(initialization;condition;updation){
+    statements;
+}
+
+  for..of(): This variant of for, used to iterate through the array and print array elements
+     for(let variable of arrayname){
+        statements; // here variable will be array value
+     }
+
+  for..in(): This variant of for, used to iterate through the addresses of array or object values.
+     for(let variable in arrayname){
+        statements; //here variable will be index value
+     }
+
+
+
+practise:
+ //Input: "PRASAD" -----> output: "DASARP"
+ let str="prasad",str1='';
+  for(let i=str.length-1;i>=0;i--)
+  {
+    str1= str1+ str.charAt(i)
+  }
+  console.log(str1)
+
+  // Input : "CAT", "ACTT"
+
+  // 4 3 2 1
+  // 4 3 2
+  // 4 3
+  // 4
+  // s1:   
+  let str=''
+   for(let r=4;r>=1;r--){
+      str=''
+      for(let j=4;j>=(5-r);j--){
+        str=str+j+" "
+      }
+      console.log(str)
+   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

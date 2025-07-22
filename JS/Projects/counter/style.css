@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg,rgb(254, 217, 148),rgb(149, 149, 243));
+}
+#counter{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 72px;
+}
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: black;
+    font-size: 24px;
+    color: white;
+}

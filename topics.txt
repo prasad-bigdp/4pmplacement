@@ -1,0 +1,29 @@
+CSS
+=====
+   selectors
+   flexbox
+   grid
+   position,float
+   transition,animations
+   media queries
+
+Bootstrap
+
+Javascript
+===========
+Introduction
+variables
+datatypes
+operators
+if,switch
+while,do while,for
+functions
+Arrays
+objects
+
+DOM  ()
+
+Advanced : 
+   timers,AJAX
+   promises,fetch,async await
+   ES6,OOP,Libraries,BOM
