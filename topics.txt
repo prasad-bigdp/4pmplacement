@@ -26,4 +26,4 @@ DOM  (selection,manipulation,creation),events
 Advanced : 
    timers,AJAX
    promises,fetch,async await
-   Libraries,BOM
+   Libraries,BOM, module,rest vs spread,classes
