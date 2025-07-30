@@ -19,3 +19,14 @@
 input:focus{
     outline: none;
 }
+
+@media (max-width:548px) {
+    #main{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (min-width:549px) and (max-width:768px){
+ #main{
+        grid-template-columns: repeat(2,1fr);
+    }   
+}

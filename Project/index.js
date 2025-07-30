@@ -79,3 +79,18 @@ document.getElementById("size").addEventListener("change", function (e) {
 	let newArray = data.filter((ele) => ele.size == e.target.value)
 	displayData(newArray)
 })
+document.getElementById('frm').addEventListener('submit', function (e)
+{
+	e.preventDefault();
+	const na = document.getElementById('na');
+	const em = document.getElementById('em');
+	const pwd = document.getElementById('pwd');
+	if ((na.trim() == "") || (em.trim() == ''))
+	{
+		alert("username or email should not be empty")
+	}
+	if (!em.value.match("/^[A-Za-z0-9]+@[A-Za-z]{2,}+.[A-Za-z]{1,}$/"))
+	{
+		alert("email is not valid")
+	} 
+})
